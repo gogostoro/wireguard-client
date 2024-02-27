@@ -15,8 +15,10 @@ host_network: true
 init: false
 ports:
   80/tcp: 80
+  51820/udp: 51820
 ports_description:
   80/tcp: WireGuard client status API
+  51820/udp: "WireGuard: forward this port in your router"
 hassio_api: true
 privileged:
   - NET_ADMIN
