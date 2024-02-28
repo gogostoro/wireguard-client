@@ -15,6 +15,7 @@ declare peer_public_key
 declare post_down
 declare post_up
 declare mtu
+declare port
 declare pre_shared_key
 
 if ! bashio::fs.directory_exists '/ssl/wireguard'; then
