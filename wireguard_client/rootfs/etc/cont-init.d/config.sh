@@ -42,6 +42,7 @@ else
      echo "PrivateKey = ${interface_private_key}" >> "${config}"
 fi
 # Set the listening port to 51820
+echo "port = ${listen_port}" >> "${config}"
 echo "ListenPort = 51820" >> "${config}"
 
 # Check if at least 1 address value and if true get the interface address
