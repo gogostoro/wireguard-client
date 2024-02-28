@@ -40,6 +40,8 @@ else
     interface_private_key=$(bashio::config 'interface.private_key')
      echo "PrivateKey = ${interface_private_key}" >> "${config}"
 fi
+# Set the listening port to 51820
+echo "ListenPort = 51820" >> "${config}"
 
 # Check if at least 1 address value and if true get the interface address
 if ! bashio::config.has_value 'interface.address'; then
